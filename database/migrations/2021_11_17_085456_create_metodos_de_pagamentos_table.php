@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMetodoDePagamentosTable extends Migration
+class CreateMetodosDePagamentosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateMetodoDePagamentosTable extends Migration
      */
     public function up()
     {
-        Schema::create('metodo_de_pagamentos', function (Blueprint $table) {
+        Schema::create('metodos_de_pagamentos', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
             $table->timestamps();

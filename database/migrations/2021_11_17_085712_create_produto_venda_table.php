@@ -14,7 +14,11 @@ class CreateProdutoVendaTable extends Migration
     public function up()
     {
         Schema::create('produto_venda', function (Blueprint $table) {
-            $table->id();
+            $table->foreignId('produto_id');
+            $table->foreignId('venda_id');
+            $table->index(['produto_id','venda_id']);
+            $table->foreign('produto_id')->references('id')->on('produtos');
+            $table->foreign('venda_id')->references('id')->on('vendas');
             $table->timestamps();
         });
     }

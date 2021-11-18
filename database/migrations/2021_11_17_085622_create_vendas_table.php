@@ -15,7 +15,18 @@ class CreateVendasTable extends Migration
     {
         Schema::create('vendas', function (Blueprint $table) {
             $table->id();
+            $table->tipo('tipo')->describe('1 - A vista , 2 - A prazo');
+            $table->foreignId('funcionario_id');
+            $table->foreignId('cliente_id');
+            $table->foreignId('metodo_de_pagamento_id');
+            $table->double('desconto')->nullable();
+            $table->double('valor');
+            $table->integer('quantidade_de_parcelas')->nullable();
+            $table->foreign('funcionario_id')->references('id')->on('funcionarios');
+            $table->foreign('cliente_id')->references('id')->on('clientes');
+            $table->foreign('metodo_de_pagamento_id')->references('id')->on('metodos_de_pagamentos');
             $table->timestamps();
+
         });
     }
 
