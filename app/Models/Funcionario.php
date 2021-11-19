@@ -18,5 +18,6 @@ class Funcionario extends Model
         'cep',
         'email',
         'telefone',
+        'password',
     ];
 }

@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Fornecedor;
 use Illuminate\Http\Request;
 
-class ClienteController extends Controller
+class FornecedorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,8 @@ class ClienteController extends Controller
      */
     public function index()
     {
-       return view('contents.clientes.cliente');
+        $fornecedores = Fornecedor::all();
+        return view('contents.fornecedores.fornecedores',compact('fornecedores'));
     }
 
     /**
@@ -23,7 +25,7 @@ class ClienteController extends Controller
      */
     public function create()
     {
-        //
+        return view('contents.fornecedores.fornecedor');
     }
 
     /**
@@ -34,7 +36,8 @@ class ClienteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Fornecedor::create($request->all());
+        return redirect()->route('fornecedores.index');
     }
 
     /**

@@ -1,0 +1,6 @@
+.rs{
+    display:flex;
+  }
+  .rs::before{
+    content:'R$'
+  }

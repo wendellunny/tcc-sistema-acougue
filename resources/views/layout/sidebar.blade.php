@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse  w-auto  max-height-vh-100" id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-white active bg-gradient-primary" href="">
+          <a class="nav-link text-white " href="{{route('ponto-de-venda.index')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">table_view</i>
             </div>
@@ -18,7 +18,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="">
+          <a class="nav-link text-white " href="{{route('produtos.index')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">inventory_2</i>
             </div>
@@ -26,13 +26,46 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="">
+          <a class="nav-link text-white " href="{{route('fornecedores.index')}}">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">receipt_long</i>
+              <i class="material-icons opacity-10">local_shipping</i>
             </div>
             <span class="nav-link-text ms-1">Fornecedores</span>
           </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link text-white active  bg-gradient-primary" href="">
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="material-icons opacity-10">receipt_long</i>
+              </div>
+              <span class="nav-link-text ms-1">Histórico de Vendas</span>
+            </a>
+          </li>
+
+        <li class="nav-item">
+            <a class="nav-link text-white " href="">
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="material-icons opacity-10">groups</i>
+              </div>
+              <span class="nav-link-text ms-1">Clientes</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white " href="">
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="material-icons opacity-10">credit_card</i>
+              </div>
+              <span class="nav-link-text ms-1">Metodos de Pagamento</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white " href="">
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="material-icons opacity-10">person</i>
+              </div>
+              <span class="nav-link-text ms-1">Funcionários/Usuários</span>
+            </a>
+          </li>
         
       </ul>
     </div>

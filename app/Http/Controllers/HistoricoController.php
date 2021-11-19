@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ForncedorController extends Controller
+class HistoricoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class ForncedorController extends Controller
      */
     public function index()
     {
-        //
+        return view('contents.historico.historico');
     }
 
     /**
@@ -34,7 +34,7 @@ class ForncedorController extends Controller
      */
     public function store(Request $request)
     {
-        
+        //
     }
 
     /**
