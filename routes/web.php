@@ -6,6 +6,8 @@ use App\Http\Controllers\FuncionarioController;
 use App\Http\Controllers\HistoricoController;
 use App\Http\Controllers\PontoDeVendaController;
 use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\RelatorioController;
+use App\Http\Controllers\RelatoriosController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,3 +29,4 @@ Route::resource('fornecedores',FornecedorController::class);
 Route::resource('clientes',ClienteController::class);
 Route::resource('funcionarios',FuncionarioController::class);
 Route::resource('historico',HistoricoController::class);
+Route::resource('relatorios',RelatorioController::class);
