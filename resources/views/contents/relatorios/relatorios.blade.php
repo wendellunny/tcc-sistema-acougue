@@ -1,16 +1,12 @@
 @extends('layout.layout')
 
 @section('title')
-    Produtos
+    Relatórios
 @endsection
 
 @section('content')
 
-         
-    <div class="d-flex w-95 justify-content-end">
-        <button class="btn btn-primary" style="margin-right: 1rem" >Adicionar Novo Produto</button>
-        <button class="btn btn-success">Repor Estoque</button>
-    </div>
+
    
 
     <div class="row mb-4">
